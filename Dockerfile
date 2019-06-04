@@ -50,7 +50,7 @@ RUN curl -o /tmp/composer-setup.php https://getcomposer.org/installer \
 
 ENV PATH /composer/vendor/bin:$PATH
 
-RUN composer global require nette/utils:^2.4.5
+RUN composer global require nette/utils:^3.0.1
 
 RUN composer global require phpstan/phpstan --prefer-dist \
 && composer global require phpstan/phpstan-nette --prefer-dist \
