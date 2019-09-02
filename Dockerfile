@@ -19,6 +19,7 @@ RUN composer global require phpstan/phpstan --prefer-dist \
 && composer global require phpstan/phpstan-nette --prefer-dist \
 && composer global require phpstan/phpstan-doctrine --prefer-dist \
 && composer global require phpstan/phpstan-phpunit --prefer-dist \
+&& composer global require phpstan/phpstan-deprecation-rules --prefer-dist \
 && composer global show | grep phpstan
 
 ENTRYPOINT ["phpstan"]
